@@ -4,41 +4,22 @@
     box-sizing: border-box;
 }
 
-
 body {
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    font-family: 'Poppins', sans-serif;
     background: rgb(4, 21, 29);    
 }
+
+/*Header*/
 
 header {
     display: flex;
     justify-content: center; 
     align-items: center;  
     font-family: 'Roboto', sans-serif;
-    background: rgb(4, 21, 29);
     color: #ffffff;  
     flex-direction: column; 
     
 }
 
-
-.nav_links{
-    display: flex;
-    justify-content: center;  
-    margin-top: 0px;
-    margin-bottom: 20px;   
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;  
-    list-style-type: none;
-    gap: 15px;
-    transition: all .3s ease;
-    
-}
 a{
     display: inline;
     color: #ffffff;
@@ -46,13 +27,22 @@ a{
 }
 
 .logoHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
     height: 150px;
 }
 
+.nav_links{
+    display: flex;
+    justify-content: center;  
+    margin-top: 0px;
+    margin-bottom: 20px;   
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 500;  
+    list-style-type: none;
+    gap: 15px;
+    transition: all .3s ease;
+    
+}
 
 #bodyGallery {
     width: 100vw;
@@ -102,7 +92,7 @@ a{
 #eventImg-2,
 #eventImg-7,
 #eventImg-16,
-#eventImg-26{
+#eventImg-25{
     grid-column: span 2;
     
 }
@@ -112,6 +102,9 @@ a{
 #eventImg-10{
     grid-row: span 2;
 }
+
+
+
 
 #popup-bg{
     display: none;  

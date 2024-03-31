@@ -5,12 +5,6 @@
 }
 
 body {
-    display:flex;
-    justify-content: center;
-    align-items:center;
-    flex-direction: column;
-    font-family: "Wix Madefor Display", sans-serif;
-    font-weight: 400;
     background: rgb(4, 21, 29);    
 }
 
@@ -24,6 +18,7 @@ header {
     color: #ffffff;  
     flex-direction: column; 
 }
+
 a{
     display: inline;
     color: #ffffff;
@@ -31,22 +26,17 @@ a{
 }
 
 .logoHeader{
-    display: flex;
-    justify-content: center;
-    align-items: center;  
-    width: auto;
     height: 150px;
 }
 
 .nav_links{
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-top: 0px;
     margin-bottom: 20px;  
     height: auto;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;  
     list-style-type: none;
     gap: 15px;
@@ -57,6 +47,7 @@ a{
 
 .baniereImg{
     background-image: url(/images/Banière/NHA05939.jpg);
+    
     opacity: 0.7;
     transition: 0.1s ease;
     background-position: center;
@@ -219,6 +210,16 @@ a{
     text-align: center;
 }
 
+.evenementiel-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+
+
+
 .evenementiel-content-text{
     display: flex;
     justify-content: center;
@@ -236,6 +237,7 @@ a{
     font-size: 40px;
 }
 .event_gallery{
+    width: 1900px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -279,16 +281,35 @@ a{
     transition: all 0.2s ease;
     border-radius: 5px;
     
+    
 }
 
 .grid-img_home {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
     display: block;
     transition: all 0.2s ease;
     border-radius: 5px;
+    scale: 0,5 ;
+    
 }
+
+.event_image1{
+    object-position: 25% -100px;
+}
+.event_image2{
+    object-position: 15% -50px;
+}
+.event_image3{
+    object-position: 25% -100px;
+}
+.event_image4{
+    object-position: 15% -10px;
+    scale: 0,5 ;
+}
+
 
 .grid-item_home:hover{
     transform: scale(1.05);   
