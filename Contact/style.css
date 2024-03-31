@@ -60,7 +60,7 @@ a{
     align-items: center;
     flex-direction: column;
     width: 1000px;
-    height: 1000px;
+    height: 950px;
     background-color: #2f2e475e;
     border-radius: 20px;
     margin-top: 50px;
@@ -180,18 +180,6 @@ a{
 
 }
 
-.infos_reseau{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 20px;
-    font-size: 15px;
-    font-weight: 100;
-    color: #ffffff;
-    margin-top: 15px;
-    
-}
 
 .infos_icons{
     display: flex;
@@ -207,8 +195,18 @@ a{
     flex-direction: row;
     width: 80px;
     width: 150px;
-    margin-top: 50px;
+    margin-top: 50px;   
+}
 
+.infos_reseau{
+    display: flex;   
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 100;
+    color: #ffffff;
+    margin-top: 15px;
+   
 }
 
 .contact_lienReseau{
@@ -220,6 +218,7 @@ a{
     font-weight: 100;
     color: #ffffff;
     gap: 15px;
+    margin-top: 5px;
     
 }
 

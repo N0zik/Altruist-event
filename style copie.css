@@ -104,7 +104,7 @@ a{
 }
 .titre-banniere{
     font-family: "Aboreto", system-ui;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-bottom: 50px;
     font-size: 30px;
     font-weight: 800;
@@ -131,7 +131,6 @@ a{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 600px;
     margin-top: 50px;
     margin-bottom: 50px;
     font-size: 20px;
@@ -139,6 +138,11 @@ a{
     color: #ffffff;
 }
 
+.presentation h1{
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
 
 .pres{
     display: flex;
@@ -174,20 +178,22 @@ a{
     animation-delay: 0.5s;
   }
 
-
+.portrait{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 #portraitImg{
-    width:500px;
-    height: 600px;
+    width:300px;
+    height: 400px;
     border-radius: 5px;
     object-fit: cover;
     margin-left: 250px;
-    margin-top: 150px;
-}
-
-.pres_titre {
-    font-family: "Aboreto", system-ui;
-    font-size: 55px;
-    margin-bottom: 15px;
 }
 
 .parag{
@@ -197,10 +203,10 @@ a{
     width: 1000px;
     height: 100px;
     margin-top: 50px;
-    font-size: 45px;
-    font-weight: 300;
+    margin-bottom: 50px;
+    font-size: 30px;
+    font-weight: 500;
     color: #ffffff;
-    text-align: center;
     flex-direction: column;
 }
 
@@ -211,12 +217,11 @@ a{
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    margin-top: 150px;
+    margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 40px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
     color: #ffffff;
-    text-align: center;
 }
 
 .evenementiel-content-text{
@@ -227,72 +232,84 @@ a{
     width: 100vw;
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 20px;
     font-weight: 500;
     color: #ffffff;
 }
 
 .event_article{
     width: 900px;
-    font-size: 40px;
-}
-.event_gallery{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#body_home {
-    width: 100vw;
-    padding: 20px; 
-    background-color: rgb(4, 21, 29);
-    background:rgb(4, 21, 29) ;
-    position: relative;
-    overflow: hidden;
-}
-
-#grid_home{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 2fr));
-    grid-auto-rows: 500px;
-    gap: 50px; 
-    padding-right: 10px;
-    grid-auto-flow: dense;
-}
-
-.event_gallery_titre{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 150px;
     font-size: 30px;
+}
+
+.event_descr{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    margin-top: 50px;
+    margin-bottom: 50px;   
+    font-size: 20px;
     font-weight: 500;
     color: #ffffff;
-    text-align: center;
+}
+.event_infos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    margin-top: 50px;
     margin-bottom: 50px;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #ffffff;
 }
 
-.grid-item_home{
-    overflow: hidden;
-    cursor: pointer;
-    transition: all 0.2s ease;
+
+
+.event_image_1{   
+    background-image: url(/images/Evenementiel/ConseilEvent.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 300px; 
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 5px;
-    
 }
-
-.grid-img_home {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: all 0.2s ease;
+.event_image_2{   
+    background-image: url(/images/Evenementiel/Professionnel.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 300px; 
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+.event_image_3{   
+    background-image: url(/images/Evenementiel/Particulier.png);
+    background-position: center;
+    background-size: cover;
+    width: 300px; 
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+.event_image_4{   
+    background-image: url(/images/Evenementiel/Scenographie.jpeg);
+    background-position: center;
+    background-size: cover;
+    width: 300px; 
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 5px;
 }
 
-.grid-item_home:hover{
-    transform: scale(1.05);   
-}
+
 
 /* Footer */
 footer{
