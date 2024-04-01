@@ -9,21 +9,17 @@ body{
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    font-family: "Wix Madefor Display", sans-serif;
-    font-weight: 400;
-    background: rgb(4, 21, 29); 
+    background: rgb(4, 21, 29);
 }
 
 /*Header*/
-
 a{
     display: inline;
     color: #ffffff;
     text-decoration:none
 }
+
 /* Fiche contact */
-
-
 .contact{
     display: flex;
     align-items: center;
@@ -43,6 +39,7 @@ a{
     gap:80px;
     height: 300px;
 }
+
 .contact_info_text{
     display: flex;
     justify-content: center;
@@ -50,9 +47,15 @@ a{
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
-    font-size: 30px;
-    font-weight: 100;
-    color: #ffffff;  
+    color: #ffffff;
+}
+
+.contact_info_text p {
+    font-size: 20px;
+}
+
+.contact_info_text h1 {
+    margin-bottom: 24px;
 }
 
 .contact_image {

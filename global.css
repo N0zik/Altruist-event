@@ -1,5 +1,6 @@
 body {
     background: rgb(4, 21, 29);
+    font-family: "Poppins", sans-serif;
 }
 
 /*Header*/
@@ -8,7 +9,6 @@ header {
     display: flex;
     justify-content: center; 
     align-items: center;  
-    font-family: 'Roboto', sans-serif;
     color: #ffffff;  
     flex-direction: column; 
 }
@@ -45,7 +45,6 @@ footer{
 }
 
 .footer{
-    font-family: 'Roboto', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
