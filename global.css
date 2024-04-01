@@ -7,10 +7,10 @@ body {
 
 header {
     display: flex;
-    justify-content: center; 
-    align-items: center;  
-    color: #ffffff;  
-    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    flex-direction: column;
 }
 
 .logoHeader{
@@ -76,7 +76,7 @@ footer{
     margin-left: 40px;
 }
 
-.pages-li,  .res-li{ 
+.pages-li,  .res-li{
     list-style-type: none;
 }
 
