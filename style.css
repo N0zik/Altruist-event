@@ -4,20 +4,7 @@
     box-sizing: border-box;
 }
 
-body {
-    background: rgb(4, 21, 29);    
-}
 
-/*Header*/
-
-header {
-    display: flex;
-    justify-content: center; 
-    align-items: center;  
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff;  
-    flex-direction: column; 
-}
 
 a{
     display: inline;
@@ -25,74 +12,62 @@ a{
     text-decoration:none
 }
 
-.logoHeader{
-    height: 150px;
+/* Bannière */
+
+.baniere {
+    position: relative;
 }
 
-.nav_links{
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 20px;  
-    height: auto;
-    text-decoration: none;
-    font-size: 25px;
-    font-weight: 500;  
-    list-style-type: none;
-    gap: 15px;
-    transition: all .3s ease;
+.baniere::before {
+content: "";
+position: absolute;
+top: 0; left: 0;
+width: 100%; height: 100%;
+background-image: url(images/Banière/NHA05939.jpg);
+transition: 0.1s ease;
+background-position: center;
+background-size: cover;
+opacity: 0.7;
+}
+
+.baniereImg {
+/* This will make it stack on top of the ::before */
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width: 100vw;
+height: 400px;
+margin-top: 5px;
+margin-bottom: 50px;
+font-size: 20px;
+font-weight: 500;
+color: #ffffff;
+background-color: none;
+text-align: center;  
+}
+
+.animated-baniere {
+    animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px); /* Déplacement initial vers le bas */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Aucun déplacement une fois entièrement visible */
+    }
+}
+
+.pres:nth-child(1) {
+animation-delay: 0.5s;
 }
 
 /* Bannière */
-
-.baniereImg{
-    background-image: url(/images/Banière/NHA05939.jpg);
-    
-    opacity: 0.7;
-    transition: 0.1s ease;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 400px;
-    margin-top: 5px;
-    margin-bottom: 50px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #ffffff;
-    background-color: none;
-    text-align: center;  
-}
-.animated-baniere {
-    animation: fadeInUp 1s forwards;
-  }
-@keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(50px); /* Déplacement initial vers le bas */
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0); /* Aucun déplacement une fois entièrement visible */
-    }
-  }
-  .pres:nth-child(1) {
-    animation-delay: 0.5s;
-  }
-
-.filtre-baniere{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 100%;
-    height: 400px;
-    color: #811b1b;
-    z-index: 1;
-}
 .titre-banniere{
     font-family: "Aboreto", system-ui;
     margin-top: 60px;
@@ -110,10 +85,14 @@ a{
     font-weight: 500;
     color: #ffffff;
 }
-/* Bannière */
 
+h2 {
+    font-size: 34px;
+}
 
-
+section {
+    padding: 100px 24px !important;
+}
 
 /* Section Présentation */
 .presentation{
@@ -121,22 +100,14 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    height: 600px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    font-size: 20px;
-    font-weight: 500;
-    color: #ffffff;
 }
-
 
 .pres{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: auto;
+    width: 80%;
     height: 300px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -146,8 +117,8 @@ a{
     flex-direction: row;
     opacity: 0;
     transform: translateY(50px);
-    
 }
+
 .animated {
     animation: fadeInUp 0.5s forwards;
   }
@@ -165,34 +136,37 @@ a{
     animation-delay: 0.5s;
   }
 
-
-#portraitImg{
-    width:500px;
-    height: 600px;
+#portraitImg {
+    width:100%;
     border-radius: 5px;
     object-fit: cover;
-    margin-left: 250px;
-    margin-top: 150px;
 }
 
-.pres_titre {
+.description {
+    font-size: 24px;
+    padding: 0 34px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.title {
     font-family: "Aboreto", system-ui;
-    font-size: 55px;
     margin-bottom: 15px;
 }
 
-.parag{
+.parag {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1200px;
-    height: 100px;
-    margin-top: 50px;
-    font-size: 45px;
     font-weight: 300;
-    color: #ffffff;
     text-align: center;
     flex-direction: column;
+    flex: 2;
+    padding: 0px 34px;
+}
+
+.portrait {
+    flex: 1;
 }
 
 /* Section Evenementiel */
@@ -201,13 +175,9 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100vw;
-    margin-top: 150px;
-    margin-bottom: 50px;
     font-size: 40px;
     font-weight: 400;
     color: #ffffff;
-    text-align: center;
 }
 
 .evenementiel-content{
@@ -217,31 +187,16 @@ a{
     flex-direction: column;  
 }
 
-
-
-
 .evenementiel-content-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    width: 100%;
     font-weight: 500;
-    color: #ffffff;
+    text-align: center;
 }
 
-.event_article{
-    width: 1900px;
-    font-size: 40px;
-}
 .event_gallery{
-    width: 1900px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 #body_home {
@@ -314,75 +269,5 @@ a{
 .grid-item_home:hover{
     transform: scale(1.05);   
 }
-
-/* Footer */
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #2f2e47;
-}
-
-.footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    font-size: 25px;
-    gap: 200px;
-    color: #ffffff;
-}
-
-.logoFooter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 150px;
-    height: 100px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.pages-a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-weight: 500;
-    color: #535279;
-    text-decoration: none; 
-
-}
-
-.resFooter{
-    width: 25px;
-    height: auto;
-    margin-left: 40px;
-}
-
-.pages-li,  .res-li{ 
-    list-style-type: none;   
-}
-
-.copyrighty{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    color: #ffffff;
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
-
-
 
 /* Footer */
